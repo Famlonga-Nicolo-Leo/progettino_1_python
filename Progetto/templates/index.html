@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p>per ora funzione tutto</p>
+    {% if lista %}
+        <ul>
+            {%for elemento in lista%}
+                <li>{{ elemento }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>per ora funzione tutto</p>
+        {%endif%}
 </body>
 </html>
